@@ -32,7 +32,7 @@ def notice(identifier):
     """
     personneUnique = Person.query.get(identifier)
 
-<<<<<<< HEAD
+
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -56,7 +56,7 @@ def inscription():
     else:
         return render_template("pages/inscription.html")
 
-=======
+
     listLien = personneUnique.link_pers1
 
     return render_template("pages/notice.html", unique=personneUnique, listLien=listLien)
@@ -83,4 +83,4 @@ def creer_lien():
 
     else:
         return render_template("pages/creer_lien.html")
->>>>>>> dico-proso/master
+
